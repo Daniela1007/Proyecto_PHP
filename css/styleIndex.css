@@ -1,0 +1,102 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	background-image: url("fondo.png");
+}
+
+.image
+{
+	display: inline;
+	width: 232px;
+	height: 232px;
+	margin: 6px 6px;
+	padding: 6px 6px;
+	position: relative;
+}
+
+.icon-genero
+{
+	position: absolute;
+	right:2px;
+	top:-103px;
+}
+
+.header{
+	border: 1px solid:#000000;
+	border-color: #000000;
+	/*background-image: url("header.png");*/
+	height: 100px;
+}
+
+.pagination
+{
+	margin: auto;
+}
+
+.pagination ul    
+{ 
+	border:0; 
+	margin:0; 
+	padding:0; 
+}
+
+.pagination li          
+{ 
+	border:0; 
+	margin:0; 
+	padding:0; 
+	font-size:15px; 
+	list-style:none; 
+	float:left; 
+}
+
+.pagination a           
+{ 
+	border:solid 1px #000000; 
+	margin-right:2px; 
+}
+
+.pagination .previous-off,
+
+.pagination .next-off   
+{ 
+	color:#08088A; 
+	display:block; 
+	float:left; 
+	font-weight:bold; 
+	padding:3px 4px; 
+}
+
+.pagination .next a,
+
+.pagination .previous a 
+{ 
+	font-weight:bold; 
+	border:solid 1px #FFFFFF; 
+}
+
+.pagination .active     
+{ 
+	color:#ff0084; 
+	font-weight:bold; 
+	display:block; 
+	float:left; 
+	padding:4px 6px; 
+}
+
+.pagination a:link,
+
+.pagination a:visited   
+{ 
+	color:#08088A; 
+	display:block; 
+	float:left; 
+	padding:3px 6px; 
+	text-decoration:none; 
+}
+
+.pagination a:hover     
+{ 
+	border:solid 1px #666666; 
+}
