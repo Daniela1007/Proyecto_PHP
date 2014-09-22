@@ -26,7 +26,7 @@ body
 	border: 1px solid:#000000;
 	border-color: #000000;
 	/*background-image: url("header.png");*/
-	height: 100px;
+	height: 200px;
 }
 
 .pagination
@@ -99,4 +99,18 @@ body
 .pagination a:hover     
 { 
 	border:solid 1px #666666; 
+}
+
+@media (max-width: 435px){
+	.eslogan
+	{
+		display: none;
+	}
+}
+
+@media (min-width: 435px) and (max-width: 991px) {
+	.header
+	{
+		height: 300px;
+	}
 }
