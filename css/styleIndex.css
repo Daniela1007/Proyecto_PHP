@@ -2,7 +2,7 @@ body
 {
 	margin: 0;
 	padding: 0;
-	background-image: url("fondo.png");
+	background-color: #FFFFFF;
 }
 
 .image
@@ -14,6 +14,12 @@ body
 	padding: 6px 6px;
 	position: relative;
 }
+.menu{
+	float: left;
+	position: relative;
+	left: 50%;
+	position: fixed;
+}
 
 .icon-genero
 {
@@ -23,11 +29,15 @@ body
 }
 
 .header{
-	border: 1px solid:#000000;
-	border-color: #000000;
-	/*background-image: url("header.png");*/
-	height: 200px;
+	border: 1px solid #000000;
+	border-color: #386999;
+	float: left;
 }
+.menu{
+	
+	position: fixed;
+}
+
 
 .pagination
 {
