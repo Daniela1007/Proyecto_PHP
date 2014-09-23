@@ -33,12 +33,10 @@ body
 	border-color: #386999;
 	float: left;
 }
-.menu{
-	
-	position: fixed;
+
+.right{
+	float: right;
 }
-
-
 .pagination
 {
 	margin: auto;
