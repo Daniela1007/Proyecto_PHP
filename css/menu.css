@@ -1,10 +1,17 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+
+#cssmenu
+{
+  z-index: 1;
+}
+
 #cssmenu,
 #cssmenu ul,
 #cssmenu ul li,
 #cssmenu ul li a,
 #cssmenu #menu-button {
-  margin: 0 auto;
+  margin: 0;
   padding:0;
   border: 0;
   list-style: none;
@@ -31,14 +38,20 @@
   width: auto;
   font-family: 'Open Sans', sans-serif;
   line-height: 1;
-  background: #ffffff;
+   background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 }
 #menu-line {
   position: absolute;
   top: 0;
   left: 0;
   height: 3px;
-  background: #009ae1;
+  background: #000;
   -webkit-transition: all 0.25s ease-out;
   -moz-transition: all 0.25s ease-out;
   -ms-transition: all 0.25s ease-out;
@@ -70,7 +83,7 @@
   font-size: 12px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #000000;
+  color: #FFF;
   -webkit-transition: color .2s ease;
   -moz-transition: color .2s ease;
   -ms-transition: color .2s ease;
@@ -184,7 +197,12 @@
 #cssmenu ul ul li.has-sub:hover > a::after {
   border-color: #ffffff;
 }
-@media all and (max-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+
+@media (min-width: 521px) and (max-width: 784px) {
+
+}
+
+@media all and (max-width: 785px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
   #cssmenu {
     width: 50%; 
   }
@@ -301,7 +319,7 @@
     width: 11px;
     height: 1px;
     background: #000000;
-    z-index: 99;
+    z-index: 2;
   }
   #cssmenu .submenu-button.submenu-opened:after {
     display: none;
